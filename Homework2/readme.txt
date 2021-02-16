@@ -1,5 +1,4 @@
 Source:
-
   Cadence tool:
   $ source /usr/cadence/cshrc
   HSPICE:
@@ -17,7 +16,6 @@ Simulation:
   $ hspice example.sp
 
 Waveform:
-
   WaveView:
   $ wv &
 
