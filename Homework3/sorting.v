@@ -67,7 +67,7 @@ module sorting(rank0, rank1, rank2, rank3, rank4, i0, i1, i2, i3, i4);
 	ND2 index0_bit1(index0[1], inv_bool0[3], inv_bool0[2]);
 	ND2 index0_bit0(index0[0], inv_bool0[3], inv_bool0[1]);
 	selector sel0(.Z(rank0), .A(i0), .B(i1), .C(i2), .D(i3), .E(i4), .CTRL(index0));
-	//choose rank1 : bigger than 3 numbers (HA results : 10/01 or 01/10)
+	// choose rank1 : bigger than 3 numbers (HA results : 10/01 or 01/10)
 	// i0
 	EO eo1_0_s(s_bool1_0, s0_12, s0_34);
 	EO eo1_0_co(co_bool1_0, co0_12, co0_34);
@@ -93,7 +93,7 @@ module sorting(rank0, rank1, rank2, rank3, rank4, i0, i1, i2, i3, i4);
 	ND2 index1_bit1(index1[1], inv_bool1[3], inv_bool1[2]);
 	ND2 index1_bit0(index1[0], inv_bool1[3], inv_bool1[1]);
 	selector sel1(.Z(rank1), .A(i0), .B(i1), .C(i2), .D(i3), .E(i4), .CTRL(index1));
-	//choose rank2 : median (HA results : 10/00 or 01/01 or 00/10)
+	// choose rank2 : median (HA results : 10/00 or 01/01 or 00/10)
 	// i0
 	EO eo2_0_co(co2_0, co0_12, co0_34);
 	NR2 nr2_0_s(nr_s2_0, s0_12, s0_34);
@@ -129,7 +129,7 @@ module sorting(rank0, rank1, rank2, rank3, rank4, i0, i1, i2, i3, i4);
 	ND2 index2_bit1(index2[1], inv_bool2[3], inv_bool2[2]);
 	ND2 index2_bit0(index2[0], inv_bool2[3], inv_bool2[1]);
 	selector sel2(.Z(rank2), .A(i0), .B(i1), .C(i2), .D(i3), .E(i4), .CTRL(index2));
-	//choose rank3 : bigger than 1 number (HA results : 01/00 or 00/01)
+	// choose rank3 : bigger than 1 number (HA results : 01/00 or 00/01)
 	// i0
 	EO eo3_0_s(inv_s_bool3_0, s0_12, s0_34);
 	EO eo3_0_co(co_bool3_0, co0_12, co0_34);
@@ -160,7 +160,7 @@ module sorting(rank0, rank1, rank2, rank3, rank4, i0, i1, i2, i3, i4);
 	ND2 index3_bit1(index3[1], inv_bool3[3], inv_bool3[2]);
 	ND2 index3_bit0(index3[0], inv_bool3[3], inv_bool3[1]);
 	selector sel3(.Z(rank3), .A(i0), .B(i1), .C(i2), .D(i3), .E(i4), .CTRL(index3));
-	//choose rank4 : all compare == 0
+	// choose rank4 : all compare == 0
 	NR4 all0_0(bool4[0], com01, com02, com03, com04);
 	ND4 all0_1(inv_bool4[1], com01, com21, com31, com41);
 	ND4 all0_2(inv_bool4[2], com02, com12, com32, com42);
