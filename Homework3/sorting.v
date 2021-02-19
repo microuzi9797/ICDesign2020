@@ -184,17 +184,17 @@ module comparator(G, A, B);
 	EO eo5(E5, A[5], B[5]);
 	IV iv4(inv_b4, B[4]);
 	ND2 nd4(G4, A[4], inv_b4);
-	NR2	nr4(W4, E5, G4);
+	NR2 nr4(W4, E5, G4);
 	// A[5] == B[5], A[4] == B[4] and A[3] is bigger than B[3]
 	EO eo4(E4, A[4], B[4]);
 	IV iv3(inv_b3, B[3]);
 	ND2 nd3(G3, A[3], inv_b3);
-	NR3	nr3(W3, E5, E4, G3);
+	NR3 nr3(W3, E5, E4, G3);
 	// A[5] == B[5], A[4] == B[4], A[3] == B[3] and A[2] is bigger than B[2]
 	EO eo3(E3, A[3], B[3]);
 	IV iv2(inv_b2, B[2]);
 	ND2 nd2(G2, A[2], inv_b2);
-	NR4	nr2(W2, E5, E4, E3, G2);
+	NR4 nr2(W2, E5, E4, E3, G2);
 	// A[5] == B[5], A[4] == B[4], A[3] == B[3], A[2] == B[2] and A[1] is bigger than B[1]
 	EO eo2(E2, A[2], B[2]);
 	IV iv1(inv_b1, B[1]);
@@ -207,7 +207,7 @@ module comparator(G, A, B);
 	IV iv0(inv_b0, B[0]);
 	ND2 nd0(G0, A[0], inv_b0);
 	NR3 nr0(T3, E2, E1, G0);
-	AN2 an_W0(W0, T1, T3);
+	AN2 an_w0(W0, T1, T3);
 	// combine
 	NR3 nrall1(T4 ,W5, W4, W3);
 	NR3 nrall2(T5 ,W2, W1, W0);
