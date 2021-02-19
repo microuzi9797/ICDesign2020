@@ -153,17 +153,17 @@ module comparator (
 	EO eo9(E9, A[9], B[9], num[2]);
 	IV iv8(inv_a8, A[8], num[3]);
 	ND2 nd8(L8, inv_a8, B[8], num[4]);
-	NR2	nr8(W8, E9, L8, num[5]);
+	NR2 nr8(W8, E9, L8, num[5]);
 	// A[9] == B[9], A[8] == B[8] and A[7] is smaller than B[7]
 	EO eo8(E8, A[8], B[8], num[6]);
 	IV iv7(inv_a7, A[7], num[7]);
 	ND2 nd7(L7, inv_a7, B[7], num[8]);
-	NR3	nr7(W7, E9, E8, L7, num[9]);
+	NR3 nr7(W7, E9, E8, L7, num[9]);
 	// A[9] == B[9], A[8] == B[8], A[7] == B[7] and A[6] is smaller than B[6]
 	EO eo7(E7, A[7], B[7], num[10]);
 	IV iv6(inv_a6, A[6], num[11]);
 	ND2 nd6(L6, inv_a6, B[6], num[12]);
-	NR4	nr6(W6, E9, E8, E7, L6, num[13]);
+	NR4 nr6(W6, E9, E8, E7, L6, num[13]);
 	// A[9] == B[9], A[8] == B[8], A[7] == B[7], A[6] == B[6] and A[5] is smaller than B[5]
 	EO eo6(E6, A[6], B[6], num[14]);
 	IV iv5(inv_a5, A[5], num[15]);
